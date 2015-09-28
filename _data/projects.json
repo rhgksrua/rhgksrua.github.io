@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "polltogether",
+            "content": "Create and keep track of all the poll you create.",
+            "url": "https://github.com/rhgksrua/polltogether"
+        },
+        {
+            "name": "MVC in PHP",
+            "content": "Barebone implementation of MVC framework in PHP.",
+            "url": "https://github.com/rhgksrua/mvc_app"
+        },
+        {
+            "name": "Jombly Chrome Extension",
+            "content": "Pop up notification and plays next track",
+            "url": "https://github.com/rhgksrua/jomblyextension"
+        }
+    ]
+}
