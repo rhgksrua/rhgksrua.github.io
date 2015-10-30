@@ -3,17 +3,43 @@
         {
             "name": "polltogether",
             "content": "Create and keep track of all the poll you create.",
-            "url": "https://github.com/rhgksrua/polltogether"
+            "url": "https://github.com/rhgksrua/polltogether",
+            "tech": ["Javascript", "Node.js", "Angular.js", "MongoDB"]
         },
         {
             "name": "MVC in PHP",
             "content": "Barebone implementation of MVC framework in PHP.",
-            "url": "https://github.com/rhgksrua/mvc_app"
+            "url": "https://github.com/rhgksrua/mvc_app",
+            "tech": ["PHP"]
+
         },
         {
             "name": "Jombly Chrome Extension",
             "content": "Pop up notification and plays next track",
-            "url": "https://github.com/rhgksrua/jomblyextension"
+            "url": "https://github.com/rhgksrua/jomblyextension",
+            "tech": ["Javascript"]
         }
-    ]
+    ],
+    "skills": {
+        "experience": [
+            "Javascript",
+            "Node.js",
+            "PHP",
+            "HTML",
+            "CSS",
+            "python"
+        ],
+        "databases": [
+            "MySQL",
+            "MongoDB"
+        ],
+        "tools": [
+            "GNU/Linux",
+            "git",
+            "SSH",
+            "vim"
+        ]
+    },
+    "intro": "I'm rhgksrua, a junior web develop.  My current interests are Javascript, Node.js, HTML5, Angular.js."  
+
 }
