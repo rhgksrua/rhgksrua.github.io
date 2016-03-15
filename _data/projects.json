@@ -4,20 +4,20 @@
             "name": "polltogether",
             "content": "Create and keep track of all the poll you create.",
             "url": "https://github.com/rhgksrua/polltogether",
-            "tech": ["Javascript", "Node.js", "Angular.js", "MongoDB"]
+            "techs": ["Javascript", "Node.js", "Angular.js", "MongoDB"],
         },
         {
-            "name": "MVC in PHP",
-            "content": "Barebone implementation of MVC framework in PHP.",
+            "name": "PHP Framework",
+            "content": "A simple MVC framework in PHP.",
             "url": "https://github.com/rhgksrua/mvc_app",
-            "tech": ["PHP"]
+            "techs": ["PHP"]
 
         },
         {
             "name": "Jombly Chrome Extension",
-            "content": "Pop up notification and plays next track",
+            "content": "Basic controls for Jombly",
             "url": "https://github.com/rhgksrua/jomblyextension",
-            "tech": ["Javascript"]
+            "techs": ["Javascript"]
         }
     ],
     "skills": {

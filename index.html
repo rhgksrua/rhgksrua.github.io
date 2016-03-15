@@ -9,10 +9,39 @@ permalink: /
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
         <link href='/resources/css/reset.min.css' rel='stylesheet' type='text/css'>
         <link href='/resources/css/main.css' rel='stylesheet' type='text/css'> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
+        <nav>
+            <p class='contact'>Contact</p>
+        </nav>
+        <div class='contact-container'>
+            <div class='close'></div>
+            <div class='form-container'>
+                <h3>Contact</h3>
+                <br/>
+                <form action="http://mailthis.to/hankhank" method="post" class='form'>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="name" placeholder="your@email.com" />
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea cols="34" rows="8" name="message"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Submit " />
+                    </div>
+                    <input type="hidden" name="_confirmation" value="thanks">
+                </form>
+            </div>
+        </div>
         <section class='section-container'>
             <div class='container'>
                 <article class='header'>
@@ -27,14 +56,19 @@ permalink: /
                         {% for project in site.data.projects.projects %}
                         <li>
                             <h3 class='content-title'><a href='{{ project.url }}'>{{ project.name }}</a></h3>
-                            <p class='content'>{{ project.content }}</h3>
+                            <p class='content'>{{ project.content }}</p>
+                            <div class='techs'>
+                                {% for tech in project.techs %}
+                                <p class='tech'>{{ tech }}</p>
+                                {% endfor %}
+                            </div>
+
 
                         </li>
                         {% endfor %}
                     </ul>
                 </article>
                 <article class='about-me'>
-                    <h2>About Me</h2>
                     <div class='experience-container'>
                         <h3>Experience</h3>
                         <ul class='experience-list'>
@@ -68,5 +102,6 @@ permalink: /
                 </article>
             </div>
         </section>
+        <script src="resources/js/main.js"></script>
     </body>
 </html>
