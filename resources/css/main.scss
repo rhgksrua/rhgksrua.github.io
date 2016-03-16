@@ -3,6 +3,7 @@
 
 $container-width: 700px;
 $section-width: 500px;
+$link-color: #82B1FF;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -28,11 +29,25 @@ h3 {
     font-size: 1.2em;
 }
 
-article {
+.links {
+    text-align: center;
+    padding: 0 10px 30px 10px;
+    a {
+        color: $link-color;
+        padding: 10px;
+    }
 }
 
 .content-title {
     padding-left: 0;
+    a {
+        color: $link-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+        
 }
 
 .section-container {
@@ -218,6 +233,9 @@ nav {
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 2em;
+    }
     .section-container {
         max-width: 95%;
     }
