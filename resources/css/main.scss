@@ -4,16 +4,21 @@
 $container-width: 700px;
 $section-width: 500px;
 $link-color: #82B1FF;
+$nav-color: #E3F2FD;
 
 body {
     font-family: 'Roboto', sans-serif;
     color: rgb(119, 119, 107);
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    letter-spacing: 0.7px;
 }
 
 h1 {
     margin: 0;
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2.4em;
 }
 
@@ -75,7 +80,7 @@ h3 {
 
 nav {
     height: 50px;
-    background-color: #EBEBEB;
+    background-color: $nav-color;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
@@ -234,7 +239,6 @@ nav {
 
 @media (max-width: 600px) {
     body {
-        font-size: 2em;
     }
     .section-container {
         max-width: 95%;
