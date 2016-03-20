@@ -2,22 +2,31 @@
     "projects": [
         {
             "name": "polltogether",
-            "content": "Create and keep track of all the poll you create.",
+            "content": "polltogether is a web app for polling. Create polls and vote on polls created by others. You can create an account and keep track of all the polls you have created. The results are displayed using various charts.",
             "url": "https://github.com/rhgksrua/polltogether",
-            "techs": ["Javascript", "Node.js", "Angular.js", "MongoDB"],
+            "demo": "",
+            "techs": ["Javascript", "Node.js", "Angular.js", "MongoDB", "Bootstrap"]
         },
         {
             "name": "PHP Framework",
-            "content": "A simple MVC framework in PHP.",
+            "content": "A simple framework in PHP.",
             "url": "https://github.com/rhgksrua/mvc_app",
             "techs": ["PHP"]
 
         },
         {
             "name": "Jombly Chrome Extension",
-            "content": "Basic controls for Jombly",
+            "content": "Adds more functionality to jombly. The track information will be notified using chrome notification. Also, you no longer need to open the tab with jombly in order to skip to next track.",
             "url": "https://github.com/rhgksrua/jomblyextension",
+            "demo": "",
             "techs": ["Javascript"]
+        },
+        {
+            "name": "Freecodecamp Projects",
+            "content": "Many different projects using mostly front-end technologies.",
+            "url": "http://codepen.io/collection/XyypMP/",
+            "demo": "",
+            "techs": ["Javascript", "React.js", "JQuery", "HTML", "SASS", "CSS"]
         }
     ],
     "skills": {
