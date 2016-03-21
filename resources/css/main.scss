@@ -26,7 +26,9 @@ h2 {
     margin: 0;
     position: relative;
     font-size: 1.7em;
+    padding-bottom: 20px;
 }
+
 
 h3 {
     margin: 0;
@@ -207,7 +209,9 @@ nav {
     position: relative;
     max-width: $section-width;
     margin: 0 auto;
-    font-size: 0.9em;
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.87);
     line-height: 32px;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -228,7 +232,12 @@ nav {
 
 .portfolio {
     li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #EBEBEB;
+        padding-bottom: 10px;
+        &:last-child {
+            border-bottom: none;
+        }
     }
 }
 
