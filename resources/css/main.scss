@@ -91,13 +91,19 @@ nav {
         padding-right: 40px;
         float: right;
         line-height: 50px;
-        cursor: pointer;
         color: $nav-text;
         a {
             text-decoration: none;
             color: inherit;
+            cursor: pointer;
         }
+    }
+    p.title {
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 1.2em;
 
+        float: left;
     }
 }
 
@@ -251,6 +257,29 @@ nav {
     width: $section-width / 3;
     float: left;
 }
+
+// post list css
+.posts {
+    h1 {
+        margin-bottom: 30px;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    width: 80%;
+    
+    .post {
+        padding: 10px 0;
+        a {
+        }
+        .post-date {
+            font-size: 0.8em;
+        }
+    }
+}
+
+
+
 
 @media (max-width: 650px) {
     body {

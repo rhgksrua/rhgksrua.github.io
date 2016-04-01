@@ -3,7 +3,7 @@ $('.close').click(function(e) {
     console.log('closing contact');
 });
 
-$('.contact').click(function(e) {
+$('#contact').click(function(e) {
     $('.contact-container').addClass('show');
     console.log('open contact');
 });
