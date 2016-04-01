@@ -4,7 +4,8 @@
 $container-width: 700px;
 $section-width: 500px;
 $link-color: #82B1FF;
-$nav-color: #E3F2FD;
+$nav-color: #3E61E4;
+$nav-text: #EBEBEB;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -91,6 +92,11 @@ nav {
         float: right;
         line-height: 50px;
         cursor: pointer;
+        color: $nav-text;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
     }
 }

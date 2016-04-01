@@ -1,7 +1,8 @@
 timezone: America/Chicago
 encoding: utf-8
-markdown: kramdown
-
+sass:
+    sass_dir: _sass
+    style: compressed
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
