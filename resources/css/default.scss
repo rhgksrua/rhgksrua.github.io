@@ -96,11 +96,12 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .post-container {
-        font-family: "Vollkorn", Palatino, Times;
+    body {
+
+    }
+    .content-container {
+        width: 95%;
         margin-right: auto;
         margin-left: auto;
-        width: 100%;
     }
-
 }
