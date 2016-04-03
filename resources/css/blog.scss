@@ -4,54 +4,7 @@
 $nav-color: #3E61E4;
 $nav-text: #EBEBEB;
 
-<<<<<<< HEAD
 .posts {
-=======
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-html {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    position:relative;
-    min-height: 100%;
-}
-
-nav {
-    height: 50px;
-    background-color: $nav-color;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: $nav-text;
-    letter-spacing: 0.7px;
-    .items {
-        padding-right: 40px;
-        float: right;
-        line-height: 50px;
-        a {
-            color: $nav-text;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-    }
-}
-
-// markdown css
-.post-container {
-    font-family: "Vollkorn", Palatino, Times;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 100px;
-    width: 80%;
->>>>>>> da694e1408f99a49408121396ed659867e0743ae
     h1 {
         text-align: center;
     }
