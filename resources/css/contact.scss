@@ -1,0 +1,103 @@
+---
+---
+.contact-container {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding-top: 100px;
+    transition: all 0.2s;
+    .close {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        margin: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            border-radius: 2px;
+            content: '';
+            width: 10px;
+            height: 40px;
+            background-color: #EBEBEB;
+            transform: rotate(135deg);
+        }
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            border-radius: 2px;
+            content: '';
+            width: 10px;
+            height: 40px;
+            background-color: #EBEBEB;
+            transform: rotate(45deg);
+        }
+    }
+    .form-container {
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #424242;
+        padding: 20px;
+        border-radius: 5px;
+        h3 {
+            color: #EBEBEB;
+        }
+
+
+        .form {
+            
+            label {
+                display: block;
+                padding: 10px;
+                color: #FAFAFA;
+            }
+            input {
+                box-sizing: border-box;
+                display: block;
+                border-radius: 4px;
+                border: 0;
+                padding: 10px 10px;
+            }
+            input[type='email'] {
+                width: 100%;
+            }
+            input[type='submit'] {
+                padding: 10px;
+                background-color: #EBEBEB;
+                border: 1px solid #9E9E9E;;
+                margin-top: 10px;
+            }
+            textarea {
+                font-family: 'Roboto', sans-serif;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: 4px;
+                padding: 10px 10px;
+            }
+
+        }
+    }
+
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+

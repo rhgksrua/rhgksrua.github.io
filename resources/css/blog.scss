@@ -4,124 +4,24 @@
 $nav-color: #3E61E4;
 $nav-text: #EBEBEB;
 
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-html {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    position:relative;
-    min-height: 100%;
-}
-
-nav {
-    height: 50px;
-    background-color: $nav-color;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: $nav-text;
-    letter-spacing: 0.7px;
-    .items {
-        padding-right: 40px;
-        float: right;
-        line-height: 50px;
-        a {
-            color: $nav-text;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-    }
-}
-
-// markdown css
-.post-container {
-    font-family: "Vollkorn", Palatino, Times;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 100px;
-    width: 80%;
+.posts {
     h1 {
-        margin: 20px;
-        font-weight: normal;
-        font-size: 2em;
-    }
-    h2 {
-        margin: 20px;
-        font-weight: normal;
-        font-size: 1.7em;
-    }
-    h3 {
-        margin: 20px;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 1.4em;
-        padding: 5px;
-    }
-    p {
-        padding: 5px;
-        margin: 5px;
-        line-height: 1.7em;
+        text-align: center;
     }
     ul {
-        list-style: square;
-        padding-left:1.2em;
-    }
-    ol {
-        padding-left:1.2em;
-    }
-    blockquote {
-        margin-left: 1em;
-        padding-left: 1em;
-        border-left: 1px solid #ddd;
-    }
-    a {
-        color: #2484c1;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    a img {
-        border:none;
-    }
-    h1 a, h1 a:hover {
-        color: #333;
-        text-decoration: none;
-    }
-    hr {
-        color : #ddd;
-        height : 1px;
-        margin: 2em 0;
-        border-top : solid 1px #ddd;
-        border-bottom : none;
-        border-left: 0;
-        border-right: 0;
-    }
-    em {
-        font-weight: 700;
+        li {
+            position: relative;
+            margin-top: 30px;
+            .post-date {
+                position: absolute;
+                right: 0;
+                
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
-footer {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    height: 30px;
-    line-height: 30px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #585858;
-    color: #EBEBEB;
-    text-align: center;
-}
 
 @media (max-width: 600px) {
     .post-container {

@@ -1,0 +1,106 @@
+---
+---
+
+$nav-color: #3E61E4;
+$nav-text: #EBEBEB;
+$link-color: #212121;
+
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    position:relative;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(119, 119, 107);
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+h1 {
+    font-size: 2.2em;
+    padding: 10px 0;
+}
+
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    margin-bottom: 30px;
+    text-align: center;
+    .items {
+        display: inline-block;
+        padding-left: 20px;
+        a {
+            text-decoration: none;
+            color: $nav-color;
+        }
+    }
+}
+
+.links {
+    text-align: center;
+    padding: 0 10px 30px 10px;
+    a {
+        color: $link-color;
+        padding: 10px;
+    }
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(119, 119, 107, 0) 0%, rgba(119, 119, 107, 0.2) 6%, rgba(119, 119, 107, 0.2) 94%, rgba(119, 119, 107, 0) 100%);
+    }
+}
+
+.content-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 90px;
+    width: 500px;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #585858;
+    color: #EBEBEB;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .post-container {
+        font-family: "Vollkorn", Palatino, Times;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+}

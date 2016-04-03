@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,19 +8,34 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
         <link href='/resources/css/reset.min.css' rel='stylesheet' type='text/css'> 
-        <link href='/resources/css/blog.css' rel='stylesheet' type='text/css'> 
+        <link href='/resources/css/contact.css' rel='stylesheet' type='text/css'>
+        <link href='/resources/css/default.css' rel='stylesheet' type='text/css'>
+        {% for css in page.css %}
+            <link href='/resources/css/{{ css }}' rel='stylesheet' type='text/css'> 
+        {% endfor %}
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'> 
         <link href='/resources/css/syntax.css' rel='stylesheet' type='text/css'> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <title></title>
     </head>
     <body>
+        {% include contact.html %}
         <header>
+            <article class='header'>
+                <h1>rhgksrua</h1>
+            </article>
             <nav>
-                <p class='items blog'><a href="/blog">Blog</a></p>
                 <p class='items home'><a href="/">Home</a></p>
+                <p class='items blog'><a href="/blog">Blog</a></p>
+                <p class='items contact' id='contact'><a href="">Contact</a></p>
             </nav>
+            <article class='links'>
+                <a href='https://github.com/rhgksrua/'><i class="fa fa-github fa-2x"></i></a>
+                <a href='http://codepen.io/rhgksrua/'><i class="fa fa-codepen fa-2x"></i></a>
+                <a href='https://www.freecodecamp.com/rhgksrua'><i class="fa fa-fire fa-2x"></i></a>
+            </article>
         </header>
-        <div class='post-container'>
+        <div class='content-container'>
             {{ content }}
         </div>
         <footer>
@@ -25,5 +43,6 @@
                 <h3>By RH</h3>
             </article>
         </footer>
+        <script src="/resources/js/main.js"></script>
     </body>
 </html>

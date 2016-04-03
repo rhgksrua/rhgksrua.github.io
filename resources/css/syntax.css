@@ -3,7 +3,7 @@
 
 
 .highlight { 
-    background-color: #E4E4E4;
+    background-color: #EBEBEB;
     padding: 12px;
     border-radius: 3px;
 }
@@ -11,6 +11,7 @@
 .highlighter-rouge {
     font-family: 'Source Code Pro';
     font-weight: 400;
+    font-size: 0.8em;
     overflow: auto;
 }
 
