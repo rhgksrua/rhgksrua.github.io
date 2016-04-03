@@ -8,11 +8,26 @@ css:
 <section class='posts'>
     <h1>Blog.</h1>
     <ul class='post-list'>
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
         <li class='post'>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <span class='post-date'>{{ post.date || date: '%B %d, %Y' }}</span>
+            <div>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span class='post-date'>{{ post.date || date: '%B %d, %Y' }}</span>
+          </div>
         </li>
       {% endfor %}
     </ul>
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Prev</a>
+        {% else %}
+        <span class="previous">Prev</span>
+        {% endif %}
+        <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+        <span class="next ">Next</span>
+        {% endif %}
+    </div>
 </section>

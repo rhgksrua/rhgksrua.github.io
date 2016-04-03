@@ -6,3 +6,5 @@ sass:
 kramdown:
     input: GFM
     syntax_highlighter: rouge
+paginate: 2
+paginate_path: "/blog/page:num/"

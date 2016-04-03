@@ -12,23 +12,38 @@ $nav-text: #EBEBEB;
         li {
             position: relative;
             margin-top: 30px;
+            a {
+                display: inline-block;
+                width: 400px;
+            }
             .post-date {
                 position: absolute;
                 right: 0;
-                
                 font-size: 0.8em;
             }
         }
     }
 }
 
+.pagination {
+    text-align: center;
+    margin-top: 50px;
+}
 
 @media (max-width: 600px) {
-    .post-container {
-        font-family: "Vollkorn", Palatino, Times;
-        margin-right: auto;
-        margin-left: auto;
-        width: 100%;
+    .posts {
+        ul {
+            li {
+                a {
+                    width: 100%;
+                }
+                .post-date {
+                    position: relative;
+                    left: 0;
+                    display: block;
+                    font-size: 0.8em;
+                }
+            }
+        }
     }
-
 }
