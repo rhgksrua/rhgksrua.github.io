@@ -3,13 +3,13 @@
 
 
 .highlight { 
-    background-color: #EBEBEB;
     padding: 12px;
     border-radius: 3px;
     line-height: 14px;
 }
 
 .highlighter-rouge {
+    background-color: #EBEBEB;
     font-family: 'Source Code Pro';
     font-weight: 400;
     font-size: 0.8em;
