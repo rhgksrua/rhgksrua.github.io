@@ -12,6 +12,13 @@ $nav-text: #EBEBEB;
         text-decoration: none;
         color: $nav-color;
     }
+    a.demo-link {
+        background-color: #FF8181;
+        padding: 2px;
+        border-radius: 2px;
+        color: white;
+        margin-left: 10px;
+    }
 
     h1 {
         text-align: center;
@@ -77,6 +84,7 @@ $nav-text: #EBEBEB;
     margin: 10px;
 }
 
+
 @media (max-width: 650px) {
     .section-container {
         max-width: 95%;
@@ -84,5 +92,9 @@ $nav-text: #EBEBEB;
     .experience-container, .database-container, .tool-container {
         width: 32%;
         float: left;
+    }
+    .form-container {
+        padding: 10px;
+        background-color: red;
     }
 }

@@ -35,7 +35,7 @@ nav {
     text-align: center;
     .items {
         display: inline-block;
-        margin: 0 20px;
+        width: 100px;
         padding: 10px 0;
         a {
             text-decoration: none;
@@ -50,9 +50,13 @@ nav {
 .links {
     text-align: center;
     padding: 0 10px 30px 10px;
-    a {
-        color: $link-color;
-        padding: 10px;
+    p {
+        display: inline-block;
+        width: 100px;
+        padding: 10px 0;
+        a {
+            color: $link-color;
+        }
     }
 }
 
