@@ -6,7 +6,6 @@ css:
 - main.css
 ---
 <div class='container'>
-    <h1>Introduction</h1>
     <article class='intro'>
         <p>{{ site.data.projects.intro }}</p>
     </article>
@@ -15,13 +14,18 @@ css:
         <ul>
             {% for project in site.data.projects.projects %}
             <li>
-            <h3 class='content-title'><a href='{{ project.url }}'>{{ project.name }}</a></h3>
-            <p class='content'>{{ project.content }}</p>
-            <div class='techs'>
-                {% for tech in project.techs %}
-                <p class='tech'>{{ tech }}</p>
-                {% endfor %}
-            </div>
+                <h3 class='content-title'><a href='{{ project.url }}'>{{ project.name }}</a></h3>
+                <p class='content'>{{ project.content }}</p>
+                <div class='techs'>
+                    {% for tech in project.techs %}
+                    <p class='tech'>{{ tech }}</p>
+                    {% endfor %}
+                </div>
+                {% if project.demo != null %}
+                <p class='demo'>
+                    <a class='' href='{{ project.demo }}'>Demo</a>
+                </p>
+                {% endif %}
             </li>
             {% endfor %}
         </ul>
