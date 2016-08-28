@@ -6,6 +6,8 @@ $section-width: 500px;
 $link-color: #82B1FF;
 $nav-color: #3E61E4;
 $nav-text: #EBEBEB;
+$exp-text: #c5fff4;
+$exp-size: 0.9em;
 
 .container {
     a {
@@ -78,6 +80,16 @@ $nav-text: #EBEBEB;
 .experience-container, .database-container, .tool-container {
     width: $section-width / 3;
     float: left;
+    ul {
+        li {
+            padding: 2px;
+            .exp-item {
+                padding: 2px;
+                font-size: $exp-size;
+                background-color: $exp-text;
+            }
+        }
+    }
 }
 
 .demo {

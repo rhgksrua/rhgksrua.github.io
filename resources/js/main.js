@@ -22,3 +22,20 @@ $('#submit-msg').click(function(e) {
     console.log('submit');
     e.preventDefault();
 });
+
+// Check if elemet off screen
+
+function offScreen($el) {
+    var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var currentPosition = $(document).scrollTop();
+    position = $el.position();
+    console.log(currentPosition, position.top);
+    if (currentPosition > position.top) {
+        return true;
+    }
+    return false;
+}
+
+window.addEventListener('scroll', function(e) {
+    console.log(offScreen($('#main-title')));
+});
