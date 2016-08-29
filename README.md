@@ -1,4 +1,3 @@
 Portfolio
 
-#todo
-mobile
+* Check `_config.yml` for dev server information.

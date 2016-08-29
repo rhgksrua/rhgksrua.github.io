@@ -29,6 +29,10 @@ h1 {
     padding: 10px 0;
 }
 
+h2 {
+    font-size: 1.4em;
+}
+
 
 nav {
     font-family: 'Roboto', sans-serif;
@@ -102,6 +106,33 @@ footer {
     background-color: $footer-bg;
     color: $nav-text;
     text-align: center;
+}
+
+// fixed title and nav
+.header-fixed {
+    z-index: 999;
+    padding: 0;
+    //margin: 5px 0;
+    .main-title-container-fixed {
+        position: fixed;
+        top: 0;
+        display: none;
+        width: 100%;
+        background-image: url('../img/mochaGrunge.png');
+        background-repeat: repeat;
+        text-align: center;
+        z-index: 999;
+        .main-title-fixed {
+            color: white;
+        }
+
+    }
+    .nav-fixed {
+        display: none;
+    }
+    .links-fixed {
+        display: none;
+    }
 }
 
 
