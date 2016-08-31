@@ -14,7 +14,7 @@ $('.contact-container').click(function(e) {
 });
 
 // Open contact
-$('#contact').click(function(e) {
+$('.contact-link').click(function(e) {
     e.preventDefault();
     $('.contact-container').addClass('show');
     console.log('open contact');
