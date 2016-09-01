@@ -179,4 +179,15 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
+    .links {
+        padding: 0 10px 30px 10px;
+        p {
+            display: inline-block;
+            width: 70px;
+            padding: 10px 0;
+            a {
+                color: $link-color;
+            }
+        }
+    }
 }

@@ -49,7 +49,7 @@
         -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
         -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.44);
-        width: 340px;
+        max-width: 340px;
         margin-right: auto;
         margin-left: auto;
         background-color: #FFF;
@@ -112,10 +112,16 @@
     visibility: visible;
     opacity: 1;
 }
+
 @media (max-width: 650px) {
     .contact-container {
+        .close {
+            display: none;
+        }
         .form-container {
             padding: 10px;
+            border-radius: 0;
         }
     }
+
 }
