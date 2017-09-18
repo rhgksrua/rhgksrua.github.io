@@ -6,13 +6,13 @@ css:
 ---
 
 <section class='posts'>
-    <h1>Blog.</h1>
+    <h1>Blog</h1>
     <ul class='post-list'>
       {% for post in paginator.posts %}
         <li class='post'>
             <div>
               <a href="{{ post.url }}">{{ post.title }}</a>
-              <span class='post-date'>{{ post.date || date: '%B %d, %Y' }}</span>
+              <span class='post-date'>{{ post.date | date: '%B %d, %Y' }}</span>
           </div>
         </li>
       {% endfor %}

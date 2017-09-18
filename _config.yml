@@ -1,6 +1,6 @@
 timezone: America/Chicago
 encoding: utf-8
-host: 192.168.81.128
+host: 192.168.43.1
 port: 4000
 sass:
     sass_dir: _sass
